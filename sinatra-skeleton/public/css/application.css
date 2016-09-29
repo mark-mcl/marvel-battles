@@ -38,8 +38,14 @@ body {
   text-align: center;
 }
 
-h3 {
-
+.charlist {
+  text-align: center;
+  padding: 30px;
+  margin: auto;
+  background-color: white;
+  width: 50%;
+  list-style-type: none;
+  border: solid 2px red;
 }
 
 .center {

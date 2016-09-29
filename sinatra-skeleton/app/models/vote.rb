@@ -1,3 +1,3 @@
 class Vote < ActiveRecord::Base
-  # Remember to create a migration!
+  belongs_to :winner, class_name: :Character
 end

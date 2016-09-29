@@ -4,4 +4,6 @@
   <blockquote>
     <%=character[:data][:results][0][:description]%>
   </blockquote>
+
+  <%= erb :'/votes/_new', layout: false, locals: {character: character} %>
 </div>
