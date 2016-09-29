@@ -1,0 +1,7 @@
+<div class="character-container center">
+  <h3><%= character[:data][:results][0][:name] %></h3>
+  <img src="<%=character[:data][:results][0][:thumbnail][:path]%>.<%=character[:data][:results][0][:thumbnail][:extension]%>">
+  <blockquote>
+    <%=character[:data][:results][0][:description]%>
+  </blockquote>
+</div>

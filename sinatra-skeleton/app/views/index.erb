@@ -1,38 +1,8 @@
-<% @character_list[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
+<div id='char1'>
+<%= erb :'/characters/_show', layout: false, locals: {character: @char1} %>
+</div>
 
-<% @character_list_2[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-<% @character_list_3[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-<% @character_list_4[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-<% @character_list_5[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-
-<% @character_list_6[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-<% @character_list_7[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-<% @character_list_8[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
-<% @character_list_9[:data][:results].each do |character|%>
-  <p><%=character[:name]%>, <%= character[:id] %></p>
-<%end%>
-
+<div id='char2'>
+<%= erb :'/characters/_show', layout: false, locals: {character: @char2} %>
+</div>
 
