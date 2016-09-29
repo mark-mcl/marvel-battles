@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#Marvel API Ruby Wrapper
+gem 'marvelite'
+
 # PostgreSQL driver
 gem 'pg'
 
