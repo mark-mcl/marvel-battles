@@ -7,8 +7,8 @@ post '/votes' do
       character_2 = Character.find(rand(1..72))
     end
   	content_type :json
-  	{character_1: (erb :'/characters/_show', layout: false, locals: {character: character_1, other_character: character_2}),
-  		character_2: (erb :'/characters/_show', layout: false, locals: {character: character_2, other_character: character_1})}.to_json
+  	{character_1: (erb :'/characters/_show', layout: false, locals: {character: character_1, other_character: character_2, id: 'char1'}),
+  		character_2: (erb :'/characters/_show', layout: false, locals: {character: character_2, other_character: character_1, id: 'char2'})}.to_json
   else
   	redirect '/'
   end

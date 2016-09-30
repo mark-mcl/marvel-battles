@@ -1,5 +1,7 @@
+<div id="leaderboard">
 <ul class="charlist">
   <% @all_chars.each do |char| %>
     <li><img class='thumbnail' src='<%= char.image_url %>'> <%= char.name %> -- <%= char.votes.count %> votes</li>
   <% end %>
 </ul>
+</div>

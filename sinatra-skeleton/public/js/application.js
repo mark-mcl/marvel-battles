@@ -15,6 +15,10 @@ $(document).ready(function() {
 			$('#char2').html(response.character_2);
 
 		})
-	})
-  
+	});
+	$('.container').on('click', '.vote-button', function(event){
+		console.log('hi');
+		$(this).css('background-color', 'red')
+	});
+
 });
