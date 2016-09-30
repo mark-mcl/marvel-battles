@@ -1,9 +1,9 @@
 <div class="character-container center">
-  <h3><%= character[:data][:results][0][:name] %></h3>
-  <img src="<%=character[:data][:results][0][:thumbnail][:path]%>.<%=character[:data][:results][0][:thumbnail][:extension]%>">
+  <h3><%= character.name %></h3>
+  <img src="<%=character.image_url%>">
   <blockquote>
-    <%=character[:data][:results][0][:description]%>
+    <%=character.description%>
   </blockquote>
 
-  <%= erb :'/votes/_new', layout: false, locals: {character: character} %>
+  <%= erb :'/votes/_new', layout: false, locals: {character: character, other_character: other_character } %>
 </div>

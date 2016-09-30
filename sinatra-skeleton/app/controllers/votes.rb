@@ -1,7 +1,6 @@
 post '/votes' do
-  @character = Character.find_by(char_id: params[:winner_id])
-  @vote = Vote.create(winner_id: params[:winner_id])
-  redirect back
+  @vote = Vote.create(winner_id: params[:winner_id], loser_id: params[:loser_id])
+  redirect '/'
 end
 
 get '/votes/index' do
