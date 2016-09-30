@@ -1,5 +1,5 @@
 <ul class="charlist">
-  <% @ranked_characters.each do |char| %>
-    <li><%= char %></li>
+  <% @all_chars.each do |char| %>
+    <li><img class='thumbnail' src='<%= char.image_url %>'> <%= char.name %> -- <%= char.votes.count %> votes</li>
   <% end %>
 </ul>
