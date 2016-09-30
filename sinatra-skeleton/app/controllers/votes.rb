@@ -4,27 +4,7 @@ post '/votes' do
 end
 
 get '/votes/index' do
-
   client = Marvelite::API::Client.new( :public_key => ENV["MARVEL_PUBLIC_KEY"], :private_key => ENV["MARVEL_PRIVATE_KEY"] )
-
-  db_ranked_characters = Character.rank_characters
-  @ranked_characters = []
-  db_ranked_characters.each do |char|
-    @ranked_characters << client.character(char.char_id)[:data][:results][0][:name]
-  end
-
-  # for each ranked_character
-  # hit the api
-  # get the data for one character
-  # slap into some array
-
+  @all_chars = Character.rank_characters
   erb :'/votes/index'
 end
-
-
-
-
-
-
-# memcached - idea
-# dalli - gem

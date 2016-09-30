@@ -39,17 +39,25 @@ body {
 }
 
 .charlist {
-  text-align: center;
   padding: 30px;
   margin: auto;
   background-color: white;
   width: 50%;
   list-style-type: none;
   border: solid 2px red;
+  padding-left: 20%;
 }
 
 .center {
     display: block;
     margin: auto;
     width: 80%;
+}
+
+.thumbnail {
+    display: inline;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    position: relative;
 }

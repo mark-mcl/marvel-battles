@@ -5,8 +5,4 @@ class Character < ActiveRecord::Base
     Character.all.sort {|x,y| y.votes.count <=> x.votes.count }
   end
 
-  def votes
-    return 0 unless !votes.empty?
-    return votes.length
-  end
 end
