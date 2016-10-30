@@ -5,5 +5,5 @@
     <%=character.description%>
   </blockquote>
 
-  <%= erb :'/votes/_new', layout: false, locals: {character: character, other_character: other_character } %>
+  <%= erb :'/votes/_new', layout: false, locals: {character: character, other_character: other_character, id: id+"-vote" } %>
 </div>

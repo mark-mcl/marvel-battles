@@ -1,5 +1,5 @@
-<form action='/votes' method='POST'>
+<form id="<%=id%>"class="vote-form" action='/votes' method='POST'>
   <input type='hidden' name='winner_id' value='<%= character.id %>'>
   <input type='hidden' name='loser_id' value='<%= other_character.id %>'>
-  <input type='submit' value='VOTE'>
+  <input class="vote-button" type='submit' value='<%=character.name.upcase%>'>
 </form>
