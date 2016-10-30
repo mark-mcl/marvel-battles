@@ -1,0 +1,63 @@
+#char1 {
+  height: 600px;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  background-color: white;
+  width: 35%;
+  border: solid 2px red;
+  float: left;
+/*  display: inline-block;*/
+}
+
+#char2 {
+  height: 600px;
+  position: fixed;
+  right: 10%;
+  top: 10%;
+  background-color: white;
+  width: 35%;
+  border: solid 2px red;
+  /*float: left;*/
+/*  display: inline-block;*/
+}
+
+img {
+  display: block;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+}
+
+body {
+  background-image: url('https://timeoutcdn-new-york.s3.amazonaws.com/GIFs/marvel/1.gif');
+}
+
+.character-container {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.charlist {
+  padding: 30px;
+  margin: auto;
+  background-color: white;
+  width: 50%;
+  list-style-type: none;
+  border: solid 2px red;
+  padding-left: 20%;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.thumbnail {
+    display: inline;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    position: relative;
+}

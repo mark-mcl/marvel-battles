@@ -1,0 +1,9 @@
+<div class="character-container center">
+  <h3><%= character.name %></h3>
+  <img src="<%=character.image_url%>">
+  <blockquote>
+    <%=character.description%>
+  </blockquote>
+
+  <%= erb :'/votes/_new', layout: false, locals: {character: character, other_character: other_character } %>
+</div>
